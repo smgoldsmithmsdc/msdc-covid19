@@ -2,6 +2,18 @@
 
 .service-results{
     list-style: none;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    background: $pale;
+    padding: 30px 15px;
+    margin-bottom: -40px;
+    @media screen and (min-width: $breakpoint){
+        margin-bottom: -80px;
+    }
 }
 
 .service-card{
@@ -36,7 +48,7 @@
     }
     .service-card__distance{
         display: inline-block;
-        color: $grey2;
+        // color: $grey2;
         font-style: italic;
         font-size: 0.9rem;
         margin-bottom: 30px;
@@ -100,7 +112,7 @@
     margin: 0 auto;
     text-align: center;
     h2{
-        color: $blue1;
+        color: $grey1;
         margin-bottom: 10px;
     }
 }
