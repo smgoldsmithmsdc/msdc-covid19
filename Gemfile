@@ -66,7 +66,5 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'devise', '~> 4.7', '>= 4.7.1'
-# TODO Lock down the gem versions for geocoder and httparty
 gem 'geocoder'
-# TODO Where is httparty used?
 gem 'httparty'
