@@ -29,7 +29,7 @@ class Admin::ServicesController < ApplicationController
 
     respond_to do |format|
       if @admin_service.save
-        format.html { redirect_to @admin_service, notice: 'Service was successfully created.' }
+        format.html { redirect_to admin_service_path @admin_service, notice: 'Service was successfully created.' }
         format.json { render :show, status: :created, location: @admin_service }
       else
         format.html { render :new }

@@ -2,12 +2,12 @@ require "application_system_test_case"
 
 class Admin::ServicesTest < ApplicationSystemTestCase
   setup do
-    @admin_service = admin_services(:one)
+    @admin_service = services(:one)
   end
 
   test "visiting the index" do
     visit admin_services_url
-    assert_selector "h1", text: "Admin/Services"
+    assert_selector "h1", text: "Admin Services"
   end
 
   test "creating a Service" do

@@ -25,10 +25,9 @@ development:
   <<: *default
   database: camden-coronavirus_development
   # Docker-Compose connection settings
-  # url: postgresql://localhost:5432
-  # database: camden_local_db
-  # username: camden_local_user
-  # password: password
+  url: postgresql://localhost:5432/camden-coronavirus_development
+  username: camden_local_user
+  password: password
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -63,6 +62,10 @@ development:
 test:
   <<: *default
   database: camden-coronavirus_test
+  # Docker-Compose connection settings
+  url: postgresql://localhost:5432/camden-coronavirus_test
+  username: camden_local_user_test
+  password: password_test
 
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is

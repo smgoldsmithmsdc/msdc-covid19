@@ -4,10 +4,10 @@ one:
   name: MyString
   description: MyText
   url: MyString
-  key_points: 
+  key_point_1:
 
 two:
   name: MyString
   description: MyText
   url: MyString
-  key_points: 
+  key_point_1:
