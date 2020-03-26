@@ -16,7 +16,7 @@ class ServicesController < ApplicationController
                 @services = Service.near(results.first.coordinates, 200)
             end
         else
-            redirect_to search_services_path, :notice => "Couldn't find any services near that location. Please make sure your location is a valid Camden area."
+            redirect_to search_services_path, :notice => "Couldn't find any services near that location. Please make sure your location is a valid Buckinghamshire area."
         end
     end 
 
