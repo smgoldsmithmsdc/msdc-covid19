@@ -12,6 +12,14 @@ class Service < ApplicationRecord
       end
   end
 
+  def safe_url
+    if self.url.start_with?('http')
+      self.url
+    else
+      "http://" + self.url
+    end
+  end
+
   def self.categories
     [
       ["Groceries and cooked meals", "food"],
